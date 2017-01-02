@@ -1,90 +1,91 @@
 
 body{
-	margin: 0 auto;
-  font-family: 'Josefin Sans', sans-serif;
-	color: #fff;
-	background : #282823;
-	background-image: url("../images/bg.png");
-  background-size: 100%;
+	margin: 0;
+  color: #111;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  font-size: 1.25rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+margin: 0 0 16px;
+}
+
+a{
+  text-decoration: underline;
+  cursor: auto;
+  color: #111;
+}
+p{
+  margin: 0 0 16px;
+  font-size: 16px;
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+ul li{
+  margin-bottom: 10px;
+}
+.name{
+  font-size: 2rem;
+}
+.container{
+  color: #111;
+  margin: 0 auto;
+  padding: 30px 0;
+  max-width: 650px;
+  width: 100%;
+}
+
+.secret{
+  position: relative;
+}
+
+.secret:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    content: "Due to company policy can't disclose";
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+}
+
+.tooltip:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+a{
+color: #111;
+transition: color .2s ease-out, background 0.5s ease-in;
+}
+
+a:hover
+{
+color: #FFFFFF;
+background-color: #d35400;
+text-shadow: none;
+}
+
+.logo{
+  background-image: url("../images/logo.png");
   background-repeat: no-repeat;
-}
-.overlay{
-	  position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background-color:rgba(255, 255, 255, 0.55);
-    z-index:-1;
-    color:white;
-}
-.column{
-	margin-top: 20%;
-  width:100%;
-  text-align: center;
+  background-position: center;
+  background-size: 50px;
+  height: 100px;
 }
 
-.main-title{
-  text-align: center;
-  font-size: 75px;
-  text-transform: uppercase;
-}
-
-.updates-text{
-    font-size: 20px;
-    text-transform: lowercase;
-  
-}
-.updates-text a {
-  color: #4088ff;
-  font-size: 25px;
-  text-decoration: none;
-}
-
-/*for 1200px or less*/
-@media screen and (max-width: 1200px){
-  .main-title{
-    font-size: 70px;
-  }
-}
-
-/*for 900px or less*/
-@media screen and (max-width: 900px){
-  .main-title{
-    font-size: 65px;
-  }
-}
-
-/*for 768px or less*/
-@media screen and (max-width: 768px){
-  .main-title{
-    font-size: 50px;
-  }
-}
-
-/*for 600px or less*/
-@media screen and (max-width: 600px){
-  .main-title{
-    font-size: 40px;
-  }
-}
-
-/*for 480px or less*/
-@media screen and (max-width: 480px){
-  .main-title{
-    font-size: 35px;
-  }
-}
-
-/*for 320px or less*/
-@media screen and (max-width: 320px){
-    .main-title{
-    font-size: 25px;
-  }
-  .updates-text{
-    font-size: 15px;
-  }
-  .updates-text a {
-    font-size: 20px;
-  }
-}
