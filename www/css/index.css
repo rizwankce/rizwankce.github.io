@@ -1,83 +1,83 @@
 
 body{
 	margin: 0;
-  color: #111;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   position: relative;
   width: 100%;
   height: 100%;
-  font-weight: 400;
-  font-size: 1.25rem;
+  font-weight: 300;
+  font-size: 25px;
   -webkit-font-smoothing: antialiased;
+  background-color: #333640;
 }
 
 h1, h2, h3, h4, h5, h6 {
 margin: 0 0 16px;
 }
 
-a{
-  text-decoration: underline;
-  cursor: auto;
-  color: #111;
-}
 p{
   margin: 0 0 16px;
   font-size: 16px;
   font-size: 1.25rem;
   line-height: 1.7;
 }
-ul li{
+
+ul {
   margin-bottom: 10px;
+  list-style: none;
+  padding: 0px;
 }
-.name{
-  font-size: 2rem;
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.intro {
+  color: #d2d2e5;
+  font-size: 35px;
+  line-height: 55px;
+  font-weight: 300;
+}
+
+.project-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #6a7185;
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 700;
+}
+
+.project {
+  line-height: 55px;
 }
 .container{
-  color: #111;
+  color: #6a7185;
   margin: 0 auto;
   padding: 30px 0;
   max-width: 650px;
   width: 100%;
 }
 
-.secret{
-  position: relative;
+.contact {
+  margin-top: 100px;
+  color: #282828;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
 }
 
-.secret:hover:after{
-    background: #333;
-    background: rgba(0,0,0,.8);
-    border-radius: 5px;
-    bottom: 26px;
-    color: #fff;
-    content: "Due to company policy can't disclose";
-    left: 20%;
-    padding: 5px 15px;
-    position: absolute;
-    z-index: 98;
-    width: 220px;
-}
-
-.tooltip:hover:before{
-    border: solid;
-    border-color: #333 transparent;
-    border-width: 6px 6px 0 6px;
-    bottom: 20px;
-    content: "";
-    left: 50%;
-    position: absolute;
-    z-index: 99;
-}
-
-a{
-color: #111;
-transition: color .2s ease-out, background 0.5s ease-in;
+a {
+  color: #d2d2e5;
+  text-decoration: none;
+  cursor: auto;
+  transition: color .2s ease-out, background 0.5s ease-in;
 }
 
 a:hover
 {
-color: #FFFFFF;
-background-color: #d35400;
+color: #34aaff;
 text-shadow: none;
 }
 
