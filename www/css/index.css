@@ -56,7 +56,7 @@ li {
   color: #6a7185;
   margin: 0 auto;
   padding: 30px 0;
-  max-width: 650px;
+  max-width: 80%;
   width: 100%;
 }
 
@@ -66,6 +66,13 @@ li {
   font-size: 18px;
   line-height: 25px;
   text-align: center;
+}
+
+.tag {
+  font-size: 16px;
+  background-color: #d2d2e5;
+  border-radius: 5px;
+  padding: 4px 8px 4px 8px;
 }
 
 a {
@@ -89,3 +96,177 @@ text-shadow: none;
   height: 100px;
 }
 
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+  .container {
+    max-width: 90%;
+  }
+
+  ul {
+    line-height: 0px;
+  }
+
+  .intro {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .project-title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  .project-description {
+    font-size: 18px;
+    line-height: 35px;
+    margin-top: 26px;
+  }
+
+  .tag {
+    font-size: 8px;
+  }
+
+  .contact {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 481px) {
+  
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 641px) {
+  ul {
+    line-height: inherit;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+  .intro {
+    font-size: 25px;
+    line-height: 48px;
+  }
+
+  .project-title {
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 30px;
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
+
+  .tag {
+    font-size: 12px;
+  }
+
+  .contact {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 961px) {
+  ul {
+    line-height: inherit;
+  }
+
+  .intro {
+    font-size: 25px;
+    line-height: 48px;
+  }
+
+  .project-title {
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 30px;
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
+
+  .tag {
+    font-size: 12px;
+  }
+
+  .contact {
+    margin-top: 80px;
+    font-size: 22px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1025px) {
+  ul {
+    line-height: inherit;
+  }
+
+  .container {
+    max-width: 800px;
+  }
+
+  .intro {
+    font-size: 35px;
+    line-height: 55px;
+  }
+  .project-title {
+    font-size: 28px;
+    margin-top: 40px;
+  }
+
+  .project-description {
+    font-size: 1.25rem;
+  }
+
+  .tag {
+    font-size: 16px;
+  }
+
+  .contact {
+    margin-top: 100px;
+    font-size: 25px;
+  }
+}
+
+/* hi-res laptops and desktops */
+@media only screen and (min-width: 1281px) {  
+  ul {
+    line-height: inherit;
+  }
+
+  .container {
+    max-width: 800px;
+  }
+
+  .intro {
+    font-size: 35px;
+    line-height: 55px;
+  }
+  .project-title {
+    font-size: 25px;
+    margin-top: 40px;
+  }
+
+  .project-description {
+    font-size: 1.25rem;
+  }
+
+  .tag {
+    font-size: 16px;
+  }
+
+  .contact {
+    margin-top: 100px;
+    font-size: 25px;
+  }
+}
