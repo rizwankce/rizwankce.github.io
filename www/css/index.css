@@ -1,7 +1,6 @@
-
-body{
-	margin: 0;
-  font-family: 'Montserrat', sans-serif;
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
   position: relative;
   width: 100%;
   height: 100%;
@@ -11,11 +10,16 @@ body{
   background-color: #333640;
 }
 
-h1, h2, h3, h4, h5, h6 {
-margin: 0 0 16px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 16px;
 }
 
-p{
+p {
   margin: 0 0 16px;
   font-size: 16px;
   font-size: 1.25rem;
@@ -52,7 +56,7 @@ li {
 .project {
   line-height: 55px;
 }
-.container{
+.container {
   color: #6a7185;
   margin: 0 auto;
   padding: 30px 0;
@@ -79,16 +83,15 @@ a {
   color: #d2d2e5;
   text-decoration: none;
   cursor: auto;
-  transition: color .2s ease-out, background 0.5s ease-in;
+  transition: color 0.2s ease-out, background 0.5s ease-in;
 }
 
-a:hover
-{
-color: #34aaff;
-text-shadow: none;
+a:hover {
+  color: #34aaff;
+  text-shadow: none;
 }
 
-.logo{
+.logo {
   background-image: url("../images/logo.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -96,9 +99,8 @@ text-shadow: none;
   height: 100px;
 }
 
-
-/* Custom, iPhone Retina */ 
-@media only screen and (min-width : 320px) {
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
   .container {
     max-width: 90%;
   }
@@ -135,15 +137,19 @@ text-shadow: none;
   }
 }
 
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 481px) {
-  
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 481px) {
+  ul {
+    line-height: inherit;
+    display: inline;
+  }
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 641px) {
+@media only screen and (min-width: 641px) {
   ul {
     line-height: inherit;
+    display: inline;
   }
 
   .container {
@@ -175,7 +181,7 @@ text-shadow: none;
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 961px) {
+@media only screen and (min-width: 961px) {
   ul {
     line-height: inherit;
   }
@@ -206,7 +212,7 @@ text-shadow: none;
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1025px) {
+@media only screen and (min-width: 1025px) {
   ul {
     line-height: inherit;
   }
@@ -239,7 +245,7 @@ text-shadow: none;
 }
 
 /* hi-res laptops and desktops */
-@media only screen and (min-width: 1281px) {  
+@media only screen and (min-width: 1281px) {
   ul {
     line-height: inherit;
   }
