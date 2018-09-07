@@ -1,13 +1,14 @@
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Karla", sans-serif;
   position: relative;
   width: 100%;
   height: 100%;
-  font-weight: 300;
-  font-size: 25px;
+  font-size: 24px;
+  line-height: 2;
   -webkit-font-smoothing: antialiased;
   background-color: #0e1a2d;
+  color: #ffffff;
 }
 
 h1,
@@ -21,67 +22,25 @@ h6 {
 
 p {
   margin: 0 0 16px;
-  font-size: 16px;
-  font-size: 1.25rem;
-  line-height: 1.7;
+  font-size: 0.8em;
+  line-height: 1.6;
 }
 
 ul {
-  margin-bottom: 10px;
+  display: inline;
   list-style: none;
   padding: 0px;
 }
 
 li {
-  display: inline;
-  margin-right: 20px;
-}
-
-.intro {
-  color: #ffffff;
-  font-size: 35px;
-  line-height: 55px;
-  font-weight: 300;
-}
-
-.project-title {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  color: #ffffff;
-  font-size: 28px;
-  line-height: 35px;
-  font-weight: 700;
-}
-
-.project {
-  line-height: 55px;
-}
-.container {
-  color: #ffffff;
-  margin: 0 auto;
-  padding: 30px 0;
-  max-width: 80%;
-  width: 100%;
-}
-
-.contact {
-  margin-top: 100px;
-  color: #282828;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-}
-
-.tag {
-  font-size: 16px;
-  background-color: #3498da;
-  color: #ffffff;
-  border-radius: 5px;
-  padding: 4px 8px 4px 8px;
+  display: inline-block;
+  margin-right: 16px;
+  margin-top: 16px;
 }
 
 a {
   color: #ffffff;
+  font-weight: bold;
   text-decoration: none;
   cursor: auto;
   transition: color 0.2s ease-out, background 0.5s ease-in;
@@ -92,6 +51,13 @@ a:hover {
   text-shadow: none;
 }
 
+.container {
+  margin: 0 auto;
+  padding: 30px 0;
+  max-width: 80%;
+  width: 960px;
+}
+
 .logo {
   background-image: url("../images/logo.png");
   background-repeat: no-repeat;
@@ -100,180 +66,57 @@ a:hover {
   height: 100px;
 }
 
+.tags {
+  margin: 16px 0 16px 0;
+}
+
+.tag {
+  font-size: 0.8em;
+  line-height: 1.6;
+  background-color: #3498da;
+  border-radius: 5px;
+  padding: 4px 8px 4px 8px;
+}
+
+.project-title {
+  margin-top: 40px;
+}
+
+.contact {
+  margin-top: 100px;
+  color: #282828;
+  font-size: 0.8em;
+  text-align: center;
+}
+
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
   .container {
-    max-width: 90%;
-  }
-
-  ul {
-    line-height: 0px;
-  }
-
-  .intro {
-    font-size: 25px;
-    line-height: 35px;
-  }
-
-  .project-title {
-    font-size: 16px;
-    line-height: 20px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-  }
-
-  .project-description {
-    font-size: 18px;
-    line-height: 35px;
-    margin-top: 26px;
-  }
-
-  .tag {
-    font-size: 8px;
-  }
-
-  .contact {
-    margin-top: 40px;
-    font-size: 18px;
+    font-size: 21px;
+    line-height: 1.6em;
   }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 481px) {
-  ul {
-    line-height: inherit;
-    display: inline;
+  .container {
+    font-size: 21px;
+    line-height: 1.6em;
   }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 641px) {
-  ul {
-    line-height: inherit;
-    display: inline;
-  }
-
-  .container {
-    max-width: 90%;
-  }
-  .intro {
-    font-size: 25px;
-    line-height: 48px;
-  }
-
-  .project-title {
-    font-size: 25px;
-    line-height: 30px;
-    margin-top: 30px;
-  }
-
-  .project-description {
-    font-size: 1rem;
-  }
-
-  .tag {
-    font-size: 12px;
-  }
-
-  .contact {
-    margin-top: 50px;
-    font-size: 20px;
-  }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 961px) {
-  ul {
-    line-height: inherit;
-  }
-
-  .intro {
-    font-size: 25px;
-    line-height: 48px;
-  }
-
-  .project-title {
-    font-size: 25px;
-    line-height: 30px;
-    margin-top: 30px;
-  }
-
-  .project-description {
-    font-size: 1rem;
-  }
-
-  .tag {
-    font-size: 12px;
-  }
-
-  .contact {
-    margin-top: 80px;
-    font-size: 22px;
-  }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1025px) {
-  ul {
-    line-height: inherit;
-  }
-
-  .container {
-    max-width: 800px;
-  }
-
-  .intro {
-    font-size: 35px;
-    line-height: 55px;
-  }
-  .project-title {
-    font-size: 28px;
-    margin-top: 40px;
-  }
-
-  .project-description {
-    font-size: 1.25rem;
-  }
-
-  .tag {
-    font-size: 16px;
-  }
-
-  .contact {
-    margin-top: 100px;
-    font-size: 25px;
-  }
 }
 
 /* hi-res laptops and desktops */
 @media only screen and (min-width: 1281px) {
-  ul {
-    line-height: inherit;
-  }
-
-  .container {
-    max-width: 800px;
-  }
-
-  .intro {
-    font-size: 35px;
-    line-height: 55px;
-  }
-  .project-title {
-    font-size: 25px;
-    margin-top: 40px;
-  }
-
-  .project-description {
-    font-size: 1.25rem;
-  }
-
-  .tag {
-    font-size: 16px;
-  }
-
-  .contact {
-    margin-top: 100px;
-    font-size: 25px;
-  }
 }
