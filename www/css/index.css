@@ -7,7 +7,7 @@ body {
   font-weight: 300;
   font-size: 25px;
   -webkit-font-smoothing: antialiased;
-  background-color: #333640;
+  background-color: #0e1a2d;
 }
 
 h1,
@@ -38,7 +38,7 @@ li {
 }
 
 .intro {
-  color: #d2d2e5;
+  color: #ffffff;
   font-size: 35px;
   line-height: 55px;
   font-weight: 300;
@@ -47,7 +47,7 @@ li {
 .project-title {
   margin-top: 40px;
   margin-bottom: 20px;
-  color: #6a7185;
+  color: #ffffff;
   font-size: 28px;
   line-height: 35px;
   font-weight: 700;
@@ -57,7 +57,7 @@ li {
   line-height: 55px;
 }
 .container {
-  color: #6a7185;
+  color: #ffffff;
   margin: 0 auto;
   padding: 30px 0;
   max-width: 80%;
@@ -74,20 +74,21 @@ li {
 
 .tag {
   font-size: 16px;
-  background-color: #d2d2e5;
+  background-color: #3498da;
+  color: #ffffff;
   border-radius: 5px;
   padding: 4px 8px 4px 8px;
 }
 
 a {
-  color: #d2d2e5;
+  color: #ffffff;
   text-decoration: none;
   cursor: auto;
   transition: color 0.2s ease-out, background 0.5s ease-in;
 }
 
 a:hover {
-  color: #34aaff;
+  color: #3498da;
   text-shadow: none;
 }
 
