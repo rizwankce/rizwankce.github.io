@@ -182,19 +182,67 @@ p {
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
   .container {
+    max-width: 90%;
     font-size: 1em;
     line-height: 1.5;
+  }
+  .project-title {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  .project-description,
+  .intro {
+    font-size: 1em;
+  }
+  .inline-li,
+  .tag {
+    margin-right: 8px;
+    margin-top: 8px;
   }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 481px) {
   .container {
+    max-width: 90%;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  .project-title {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  .project-description,
+  .intro {
+    font-size: 1em;
+  }
+  .inline-li,
+  .tag {
+    margin-right: 8px;
+    margin-top: 8px;
   }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 641px) {
+  .container {
+    max-width: 90%;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  .project-title {
+    font-size: 1.6em;
+    line-height: 1.55;
+  }
+  .project-description,
+  .intro {
+    font-size: 1.2em;
+  }
+  .inline-li,
+  .tag {
+    margin-right: 16px;
+    margin-top: 16px;
+  }
 }
 
 /* Medium Devices, Desktops */
