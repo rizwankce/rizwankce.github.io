@@ -1,14 +1,25 @@
+@font-face {
+  font-family: Quattro;
+  src: url("../fonts/iAWriterQuattroS-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Quattro;
+  src: url("../fonts/iAWriterQuattroS-Bold.ttf");
+  font-weight: 700;
+}
+
 body {
   margin: 0;
-  font-family: "Karla", sans-serif;
+  font-family: Quattro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
   position: relative;
   width: 100%;
   height: 100%;
-  font-size: 24px;
-  line-height: 2;
-  -webkit-font-smoothing: antialiased;
-  background-color: #0e1a2d;
-  color: #ffffff;
+  font-display: fallback;
+  -webkit-font-smoothing: subpixel-antialiased;
+  background-color: #131415;
+  color: rgb(215, 216, 219);
 }
 
 h1,
@@ -22,33 +33,36 @@ h6 {
 
 p {
   margin: 0 0 16px;
-  font-size: 0.8em;
-  line-height: 1.6;
 }
 
-ul {
+.inline-ul {
   display: inline;
   list-style: none;
   padding: 0px;
 }
 
-li {
+.inline-li,
+.tag {
   display: inline-block;
   margin-right: 16px;
   margin-top: 16px;
 }
 
 a {
-  color: #ffffff;
-  font-weight: bold;
+  color: inherit;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(99, 101, 105);
+  text-decoration-line: none;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
   text-decoration: none;
-  cursor: auto;
-  transition: color 0.2s ease-out, background 0.5s ease-in;
 }
 
 a:hover {
-  color: #3498da;
-  text-shadow: none;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #3498da;
 }
 
 .container {
@@ -71,11 +85,11 @@ a:hover {
 }
 
 .tag {
-  font-size: 0.8em;
-  line-height: 1.6;
-  background-color: #3498da;
+  background-color: rgb(99, 101, 105);
   border-radius: 5px;
   padding: 4px 8px 4px 8px;
+  text-align: left;
+  line-height: 1.55;
 }
 
 .project-title {
@@ -83,25 +97,99 @@ a:hover {
 }
 
 .contact {
-  margin-top: 100px;
-  color: #282828;
-  font-size: 0.8em;
   text-align: center;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.greet {
+  font-weight: bold;
+  font-size: 1.6em;
+  text-align: left;
+  color: rgb(228, 229, 231);
+  margin-top: 0.1em;
+  margin-right: 0px;
+  margin-bottom: 0.4em;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.project-title {
+  font-weight: bold;
+  font-size: 1.6em;
+  text-align: left;
+  color: rgb(228, 229, 231);
+  margin-top: 0.1em;
+  margin-right: 0px;
+  margin-bottom: 0.4em;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.project-description,
+.intro {
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.75;
+  text-align: left;
+  color: rgb(215, 216, 219);
+  margin-top: 0.3em;
+  margin-right: 0px;
+  margin-bottom: 1.15em;
+  text-decoration-line: none;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
+  text-decoration: none;
+}
+
+.seperator {
+  padding-top: 3em;
+  padding-right: 0px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
   .container {
-    font-size: 21px;
-    line-height: 1.6em;
+    font-size: 1em;
+    line-height: 1.5;
   }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 481px) {
   .container {
-    font-size: 21px;
-    line-height: 1.6em;
   }
 }
 
