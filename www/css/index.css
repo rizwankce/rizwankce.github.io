@@ -85,11 +85,12 @@ a:hover {
 }
 
 .tag {
-  background-color: rgb(99, 101, 105);
+  background-color: #4f5154;
   border-radius: 5px;
   padding: 4px 8px 4px 8px;
   text-align: left;
   line-height: 1.55;
+  color: #ffffff;
 }
 
 .project-title {
@@ -226,7 +227,7 @@ p {
 /* Small Devices, Tablets */
 @media only screen and (min-width: 641px) {
   .container {
-    max-width: 90%;
+    max-width: 80%;
     font-size: 1em;
     line-height: 1.5;
   }
