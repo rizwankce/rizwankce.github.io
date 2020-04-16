@@ -75,8 +75,8 @@ a:hover {
 .logo {
   background-image: url("../images/logo.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 50px;
+  background-position: left;
+  background-size: 32px;
   height: 100px;
 }
 
