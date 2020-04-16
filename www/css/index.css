@@ -75,8 +75,8 @@ a:hover {
 .logo {
   background-image: url("../images/logo.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 50px;
+  background-position: left;
+  background-size: 32px;
   height: 100px;
 }
 
@@ -178,6 +178,23 @@ p {
   justify-content: center;
   margin-top: 1em;
   margin-bottom: 2em;
+}
+
+.main-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.main-list li {
+  list-style: none;
+  padding: 16px 0;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.intro p {
+  padding: 16px 0;
+  text-align: -webkit-match-parent;
 }
 
 /* Custom, iPhone Retina */
