@@ -180,6 +180,23 @@ p {
   margin-bottom: 2em;
 }
 
+.main-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.main-list li {
+  list-style: none;
+  padding: 16px 0;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.intro p {
+  padding: 16px 0;
+  text-align: -webkit-match-parent;
+}
+
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
   .container {
