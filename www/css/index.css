@@ -19,7 +19,20 @@ body {
   font-display: fallback;
   -webkit-font-smoothing: subpixel-antialiased;
   background-color: #131415;
-  color: #908f95;
+  color: rgb(215, 216, 219);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 16px;
+}
+
+p {
+  margin: 0 0 16px;
 }
 
 .inline-ul {
@@ -28,14 +41,15 @@ body {
   padding: 0px;
 }
 
-.inline-li {
+.inline-li,
+.tag {
   display: inline-block;
   margin-right: 16px;
   margin-top: 16px;
 }
 
 a {
-  color: #fff;
+  color: inherit;
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: rgb(99, 101, 105);
@@ -48,7 +62,7 @@ a {
 a:hover {
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-bottom-color: #f0567e;
+  border-bottom-color: #3498da;
 }
 
 .container {
@@ -59,16 +73,31 @@ a:hover {
 }
 
 .logo {
-  margin: 32px 0;
-  background-image: url("../images/Rizwan.png");
+  background-image: url("../images/logo.png");
   background-repeat: no-repeat;
   background-position: left;
-  background-size: 8rem;
-  height: 8rem;
+  background-size: 32px;
+  height: 100px;
+}
+
+.tags {
+  margin: 16px 0 16px 0;
+}
+
+.tag {
+  background-color: #4f5154;
+  border-radius: 5px;
+  padding: 4px 8px 4px 8px;
+  text-align: left;
+  line-height: 1.55;
+  color: #ffffff;
+}
+
+.project-title {
+  margin-top: 40px;
 }
 
 .contact {
-  color: #908f95;
   text-align: center;
 }
 
@@ -103,7 +132,7 @@ p {
   font-weight: bold;
   font-size: 1.6em;
   text-align: left;
-  color: #fff;
+  color: rgb(228, 229, 231);
   margin-top: 0.1em;
   margin-right: 0px;
   margin-bottom: 0.4em;
@@ -111,11 +140,25 @@ p {
   line-height: 1.55;
 }
 
+.project-title {
+  font-weight: bold;
+  font-size: 1.6em;
+  text-align: left;
+  color: rgb(228, 229, 231);
+  margin-top: 0.1em;
+  margin-right: 0px;
+  margin-bottom: 0.4em;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.project-description,
 .intro {
   font-size: 1.2em;
   font-weight: 500;
   line-height: 1.75;
   text-align: left;
+  color: rgb(215, 216, 219);
   margin-top: 0.3em;
   margin-right: 0px;
   margin-bottom: 1.15em;
@@ -161,10 +204,16 @@ p {
     font-size: 1em;
     line-height: 1.5;
   }
+  .project-title {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  .project-description,
   .intro {
     font-size: 1em;
   }
-  .inline-li {
+  .inline-li,
+  .tag {
     margin-right: 8px;
     margin-top: 8px;
   }
@@ -177,10 +226,16 @@ p {
     font-size: 1em;
     line-height: 1.5;
   }
+  .project-title {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  .project-description,
   .intro {
     font-size: 1em;
   }
-  .inline-li {
+  .inline-li,
+  .tag {
     margin-right: 8px;
     margin-top: 8px;
   }
@@ -193,10 +248,16 @@ p {
     font-size: 1em;
     line-height: 1.5;
   }
+  .project-title {
+    font-size: 1.6em;
+    line-height: 1.55;
+  }
+  .project-description,
   .intro {
     font-size: 1.2em;
   }
-  .inline-li {
+  .inline-li,
+  .tag {
     margin-right: 16px;
     margin-top: 16px;
   }
