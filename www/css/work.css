@@ -56,7 +56,7 @@ a {
 a:hover {
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-bottom-color: #3498da;
+  border-bottom-color: #f0567e;
 }
 
 section {
@@ -71,11 +71,12 @@ section {
 }
 
 .logo {
-  background-image: url("../images/logo.png");
+  margin: 32px 0;
+  background-image: url("../images/rizwan_tiny_face.png");
   background-repeat: no-repeat;
   background-position: left;
-  background-size: 32px;
-  height: 100px;
+  background-size: 8rem;
+  height: 8rem;
 }
 
 .title {
